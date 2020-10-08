@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+
+}
+
+:root{
+    --success-color: greenyellow;
+    --error-color: red;
+
+}
+
+body{
+    background-color: #242333;
+    font-family: 'Open Sans','sans serif';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container{
+    background-color: rgb(14, 183, 196);
+    border-radius: 8px;
+    box-shadow: 0  0 10px 10px  rgba(0, 0, 0, 0.500);
+    width: 400px;
+}
+ h2{
+     text-align: center;
+     margin: 0 0 20px;
+ }
+
+.form{
+    padding: 10px 10px;
+}
+
+.form-control{
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.form-control label{
+    color: darkblue;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    display: block;
+    width: 100%;
+    border: 2px solid  burlywood;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 10px ;
+    font-size: 14px;
+}
+
+.form-control input:focus{
+    outline: none;
+    border-color: darkcyan;
+}
+
+.form-control.success input{
+    border-color: greenyellow;
+}
+
+
+
+.form-control.error small{
+    visibility: visible;
+}
+
+.form button{
+    font-size: 16px;
+    background-color:darkcyan ;
+    color: white;
+    border: 2px solid darkblue;
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#E-mail-div{
+  
+    display: none;
+}
+
+#E-mail-div #show{
+    transition: all 1s ease-in;
+    display: block;
+
+}
+
+#phone-no-div{
+    display: none;
+}
+#phone-no-div #show{
+    display: block;
+}
+
+#dob-div{
+    display: none;
+}
+#dob-div #show{
+    display: block;
+}
+
+#full-password-block{
+    display: none;
+}
+
+#full-password-block #show{
+    display: block;
+}
+
